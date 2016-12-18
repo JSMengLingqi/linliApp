@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>邻里</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/lili.js"></script>
+
+  </head>
+  <body>
+  	
+    <div class="full-background register-background">
+    	<div class="header-style">
+        	<a href="javascript:;" onclick="history.go(-1)" class="header-left"><span class="icon-chevron-left"></span></a>
+            <h1>用户注册</h1>
+            <a href="index.html" class="header-right"><span class="icon-home"></span></a>
+        </div>
+        <a href="#" class="top-link">一键了解丹麦安全猪肉</a>
+        <div class="register-content">
+        	
+            <a class="float-right" href="login.html">登录</a>
+        	<form class="form-group">
+            	
+                <div>
+                	<span class="icon-person"></span>
+                    <input type="text" placeholder="用户名" />
+                </div>
+
+                <div class="select-style">
+                    <select id="select-choice-1"  class="select-choice-1" name="area"  >
+                            <volist name="area" id="vo">
+                            <option  value="{$vo.id}" >{$vo.title}</option>
+                            </volist>
+                    </select>
+                 </div>
+                
+                <div>
+                	<span class="icon-phone"></span>
+                    <input type="text" placeholder="手机号码" />
+                </div>
+                
+                <div>
+                	<span class="icon-message"></span>
+                    <input type="text" placeholder="短信验证码" />
+                </div>
+                
+                <div>
+                	<span class="icon-password"></span>
+                    <input type="password" placeholder="输入密码" />
+                </div>
+                
+                <div class="last">
+                	<span class="icon-password"></span>
+                    <input type="password" placeholder="确认密码" />
+                </div>
+            	
+            </form>
+            
+            <button class="orange-btn" onClick="location.href='login.html'">注册</button>
+            
+        </div>
+        
+    </div>
+    
+  </body>
+</html>

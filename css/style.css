@@ -1,0 +1,876 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	font-family: 微软雅黑,sans-serif;	
+}
+
+ul {
+	list-style: none;	
+}
+
+button,
+input,
+h1,h2,h3,h4,h5,h6,
+p,
+textarea,select {
+	font-family: 微软雅黑,sans-serif!important;	
+}
+
+.orange-btn {
+	background: #4b341e;
+	border: 1px solid #4b341e;
+	border-radius: 6px;
+	padding: 8px;
+	font-size: 16px;
+	width: 100%;
+	color: #fff;
+	margin-top: 1em;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.yellow-btn {
+	background: #f3be35;
+	border: 1px solid #f3be35;
+	border-radius: 6px;
+	padding: 8px;
+	font-size: 16px;
+	/*width: 80%;*/
+	color: #fff;
+	margin-top: 1em;
+	font-weight: bold;
+	letter-spacing: 3px;
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+}
+
+.align-center {
+	text-align: center;	
+}
+
+.align-right {
+	text-align: right;	
+}
+
+.clear {
+	clear: both;	
+}
+
+/*头部*/
+.header-style {
+	background: url(../images/transparent-header-background.png) repeat;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;	
+	padding: 10px;
+	z-index: 2;
+}
+
+.yellow-background {
+	background: #f3be35;
+	position: relative;
+}
+
+.header-style a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+	top: 10px;	
+}
+
+.header-style .header-left {
+	position: absolute;
+	left: 1em;	
+}
+
+.header-style .header-right {
+	position: absolute;
+	right: 1em;	
+}
+
+.header-style h1 {
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;	
+}
+
+/*引导页*/
+.guid-2 {
+	padding: 32px 16px;	
+}
+
+.guid-2 img {
+	max-width: 100%;	
+}
+
+.guid-background-1 {
+	background: url(../images/guide-background-1.png) no-repeat bottom;
+	background-size: 100% 100%;	
+	text-align: center;
+	padding: 0;
+}
+
+.guid-background-2 {
+	background: url(../images/guide-background-2.png) no-repeat bottom;
+	background-size: 100% 100%;	
+}
+
+.guid-background-3 {
+	background: url(../images/guide-background-3.png) no-repeat bottom;
+	background-size: 100% 100%;	
+}
+
+.guid-background-4 {
+	background: url(../images/guide-background-4.png) no-repeat bottom;
+	background-size: 100% 100%;	
+	position: relative;
+}
+
+.guid-background-1 img.logo {
+	width: 120px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.guid-background-2 img.logo,
+.guid-background-3 img.logo,
+.guid-background-4 img.logo {
+	width: 100px;
+	margin-bottom: 2em;
+}
+
+.guid-background-1 .word {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.guid-background-4 .word {
+	/*position: absolute;
+	left: 1em;
+	right: 1em;
+	top: 12em;*/
+	margin-top: 0.5em;
+}
+
+.guid-background-1 .word img {
+	height:	150px;
+}
+
+.guid-background-1 .bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 3em;
+}
+
+.guid-background-1 .bottom img {
+	 width: 120px;
+}
+
+.guid-background-4 .start-btn {
+	text-align: center;	
+	/*position: absolute;
+	left: 1em;
+	right: 1em;
+	bottom: 4em;*/
+	margin-top: 2em;
+}
+
+.guid-background-4 .start-btn img {
+	height: 100px;	
+}
+
+.guid-background-4 .guid-content {
+	position: absolute;	
+}
+
+/*首页*/
+.index-background {
+	background: url(../images/index-background.png) no-repeat bottom;
+	background-size: 100% 100%;
+}
+
+.index-background .index-content {
+	position: absolute;
+	right: 2em;
+	left: 2em;
+	bottom: 3em;	
+}
+
+.index-background .choose-detail {
+	text-align: center;	
+}
+
+/*.index-background .choose-detail button {
+	
+}*/
+
+.index-background .choose-detail a {
+	color: #69390e;
+	font-size: 13px;
+	text-decoration: underline;
+	
+}
+
+.index-background .choose-detail>div {
+	margin-top: 2em;
+}
+
+/*选区*/
+.area-background  {
+	background: url(../images/area-background.png) no-repeat bottom;
+	background-size: 100% 100%;
+}
+
+.area-background .area-content {
+	position: absolute;
+	right: 2em;
+	left: 2em;
+	bottom: 1em;	
+}
+
+.area-background .area-content li {
+	text-align: center;
+	border-bottom: 1px solid #fae4aa;
+	color: #fcecc4;
+	font-size: 15px;
+	padding: 8px;
+	letter-spacing: 3px;	
+}
+
+.area-background .area-content li.active {
+	background: #fff;
+	color: #f3be35;
+	margin-left: -32px;
+	margin-right: -32px;	
+}
+
+/*登陆*/
+.login-content a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.top-link {
+	position: absolute;
+	top: 45px;
+	right: 1em;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.login-content {
+	position: absolute;
+	right: 2em;
+	left: 2em;
+	bottom: 8em;	
+}
+
+.float-right {
+	float: right;	
+}
+
+.login-content .form-group a {
+	color: #666464;
+}
+
+.form-group {
+	background: #fff;
+	border-radius : 5px;
+	border: 1px solid #fff;
+	margin-top: 20px;
+	padding-left: 10px;	
+	padding-right: 10px;
+}
+
+.form-group>div {
+	position: relative;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+  	border-bottom: 1px solid #bfbfbf;
+}
+
+.form-group>div.select-style {
+	background: url(../images/arrow-down.svg) no-repeat right center;
+	background-size: 20px;
+	  overflow: hidden;
+}
+
+.form-group>div.select-style select {
+	background: transparent;
+	border: 0;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 100%;
+}
+
+.form-group>div.last {
+	border-bottom: 0;	
+}
+
+.form-group>div span {
+	position: absolute;	
+	color: #666464;
+	font-size: 23px;
+}
+
+.form-group>div span.icon-message {
+	font-size: 16px;
+	margin-top: 4px;
+}
+
+.form-group>div span.icon-phone {
+	font-size: 20px;
+	margin-top: 2px;
+}
+
+.form-group>div input {
+	margin-left: 25px;
+	padding: 5px;
+	border: 0;
+	font-size: 16px;	
+}
+
+.login-content .align-center {
+	margin-top: 1em;	
+}
+
+/*注册*/
+.register-background {
+	background: url(../images/register-background.png) no-repeat bottom;
+	background-size: 100% 100%;
+}
+
+.register-content {
+	position: absolute;
+	right: 2em;
+	left: 2em;
+	bottom: 4em;	
+}
+
+.register-content>a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/*投票*/
+.vote-list {
+	margin-top: 14px;
+	padding: 1em;	
+}
+
+.vote-list li {
+	position: relative;	
+	border-radius: 3px;
+	margin-bottom: 1em;
+}
+
+.vote-list li a {
+	text-decoration: none;	
+}
+
+.vote-list li a>img {
+	width: 100%;	
+}
+
+.vote-list li a>div {
+	background: url(../images/vote-cover.png) no-repeat;
+	background-size: 100% 100%;	
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 5px 10px;
+	line-height: 1.6;
+}
+
+.vote-list li a>div {
+	background: url(../images/vote-cover.png) no-repeat;
+	background-size: 100% 100%;	
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 5px 10px;
+	line-height: 1.6;
+}
+
+.vote-list li a>div {
+	background: url(../images/vote-cover.png) no-repeat;
+	background-size: 100% 100%;	
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 5px 10px;
+	line-height: 1.6;
+}
+
+.vote-list h3 {
+	color: #000;
+	font-weight: normal;	
+	font-size: 18px;
+}
+
+.vote-list h3 div {
+	float: right;
+	font-weight: bold;	
+	
+}
+
+.vote-list h3 div span {
+	color: #fff;
+	font-weight: normal;
+	margin-right: 5px;	
+}
+
+.vote-list h3 div span.active {
+	color: #cb0814;
+}
+
+.vote-list p {
+	color: #fff;
+}
+
+.vote-list p>span font {
+	margin-right: 5px;	
+}
+
+.vote-list p>font {
+	float: right;
+	color: #000;	
+	font-size: 14px;
+}
+
+/*个人中心*/
+.usercenter-content .usericon-background {
+	background: url(../images/usercenter-icon.png) no-repeat;
+	background-size: 100% 100%;
+	min-height: 222px;	
+	position: relative;
+}
+
+.usercenter-content .usericon-background .align-center {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: -65px;
+}
+
+.usercenter-content .usericon-background .align-center>div {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 6px solid rgba(243,190,53,0.5);
+}
+
+.usercenter-content .usericon-background .align-center>div img {
+	width: 92px;
+	height: 92px;
+	border-radius: 50%;
+	border: 4px solid #f3be35;
+}
+
+.usercenter-content .usericon-background .align-center>div h4 {
+	color: #000;
+	font-weight: normal;	
+	margin-top: 12px;
+}
+
+.usercenter-content .user-detail {
+	text-align: center;
+	margin-top: 88px;
+	border-bottom: 1px solid #c8c8c8;
+	padding: 8px;
+	padding-bottom: 1em;
+	line-height: 2;
+}
+
+.usercenter-content .user-detail>div {
+	position: relative;	
+}
+
+.usercenter-content .user-detail span {
+	color: #3f3f3f;
+	font-weight: normal;
+}
+
+.usercenter-content .user-detail h4 {
+	color: #000000;
+	
+}
+
+.usercenter-content .user-detail h4 font {
+	margin-left: 1em;	
+}
+
+.usercenter-content .user-img {
+	padding: 1em;	
+	margin-bottom: 2em;
+}
+
+.usercenter-content .user-img .align-right {
+	
+	margin-bottom: 0.8em;	
+}
+
+.usercenter-content .user-img .align-right a {
+	color: #4b341e;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.usercenter-content .user-img ul {
+	text-align: center;	
+}
+
+.usercenter-content .user-img li {
+	float: left;
+	display: inline-block;
+	width: 32%;	
+	margin-right: 3px;
+}
+
+.usercenter-content .user-img li img {
+	width: 100%;
+	border-radius: 5px;	
+}
+
+/*上传作品*/
+.upload-list .upload-info li {
+	border-bottom: 1px solid #fcebd1;
+	padding: 1em 1em 1.6em 1em;
+	position: relative;	
+}
+
+.upload-list .upload-info li.last {
+	border-bottom: 0;	
+}
+
+.upload-list .upload-info li.thumer {
+	line-height: 50px;
+	padding-bottom: 0;
+}
+
+.upload-list .upload-info li.thumer .icon-chevron-right {
+	position: relative;
+	top: -17px; 
+}
+
+.upload-list .upload-info li a {
+	color: #4b341e;
+	text-decoration: none;	
+}
+
+.upload-list .upload-info li font {
+	font-weight: bold;
+}
+
+.upload-list .upload-info li a>span {
+	float: right;	
+}
+
+.upload-list .upload-info li a>span>font {
+	color: #939399;
+	font-size: 14px;
+}
+
+.upload-list .upload-info li a>span img {
+	  height: 50px;
+	border-radius: 5px;
+}
+
+.upload-list .upload-info li a>span input,
+.upload-list .upload-info li a>span select {
+	padding: 3px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	height: 25px;
+	font-size: 15px;
+}
+
+.upload-list .upload-info li a>span select {
+	padding: 0 1em;	
+}
+
+.upload-list .upload-info li textarea {
+	font-size: 15px;
+	width: 96%;
+	border: 1px solid #f6ce67;
+	padding: 5px;
+}
+
+.upload-list .img-detail {
+	padding: 1em;
+	text-align: center;	
+}
+
+.upload-list .img-detail ul {
+	text-align: center;	
+}
+
+.upload-list .img-detail li {
+	float: left;
+	display: inline-block;
+	width: 47%;
+	position: relative;
+}
+
+.upload-list .img-detail li:nth-child(odd) {
+	margin-right: 12px;
+}
+
+.upload-list .img-detail li img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.upload-list .img-detail li img.del {
+	width: 20px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background: #fff;
+	border-radius: 50%;
+	border: 0;
+}
+
+.upload-list .img-detail small {
+	color: #bfbfbf;
+	display: block;
+	margin-top: 0.8em;
+	margin-bottom: 0.5em;
+}
+
+.upload-list .img-detail>a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.upload-list .orange-btn {
+	margin-bottom: 0.6em;
+}
+
+.upload-list .yellow-btn {
+	width: 80%;	
+}
+
+/*投票详细*/
+.vote-detail-content .top-link {
+	color: #fff;	
+}
+
+.vote-detail-content .vote-detail .goods-detail {
+	position: relative;	
+}
+
+.vote-detail-content .vote-detail .goods-detail>img {
+	width: 100%;	
+}
+
+.vote-detail-content .vote-detail .goods-detail>div {
+	position: absolute;
+	right: 1em;
+	bottom: 1em;
+}
+
+div.attention span {
+	color: #fff;
+	margin-right: 8px;	
+}
+
+div.attention span.active {
+	color: #cb0814;
+}
+
+.vote-detail-content .user-info {
+	position: relative;
+	padding: 1em;
+}
+
+.vote-detail-content .user-info>img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.vote-detail-content .user-info .user-right {
+	padding-left: 90px;	
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 1em;
+}
+
+.vote-detail-content .user-info .user-right h4 {
+	font-weight: normal;	
+}
+
+.vote-detail-content .user-info .user-right h4 font {
+	float: right;	
+}
+
+.vote-detail-content .user-info .user-right p {
+	font-size: 14px;
+	margin-top: 1em;	
+}
+
+.vote-detail-content .user-info .user-right li {
+	width: 47%;
+	float: left;
+	display: inline-block;
+	margin-right: 5px;	
+}
+
+.vote-detail-content .user-info .user-right li button {
+	font-size: 13px;
+	padding: 3px 8px;
+}	
+
+.vote-detail-content .user-info .detail>ul {
+	padding-top: 8px;
+	text-align: center;
+}
+
+.vote-detail-content .user-info .detail>ul li {
+	float: left;
+	display: inline-block;
+	width: 32%;
+	margin-right: 3px;
+	min-height: 100px;
+}
+
+.vote-detail-content .user-info .detail>ul li img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.vote-detail-content .user-info .detail>div {
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 1em;
+}
+
+.vote-detail-content .user-info .detail>div>img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.vote-detail-content .user-info .detail>div .detail-right {
+	padding-left: 70px;	
+	color: #000;
+	  min-height: 60px;
+}
+
+.vote-detail-content .user-info .detail>div .detail-right ul,
+.vote-detail-content .user-info .detail>div .detail-right ol {
+	font-size: 13px;	
+	line-height: 1.6;
+}
+
+.vote-detail-content .user-info .detail>div .detail-right ul li li {
+	float: left;
+	display: inline-block;
+	margin-right: 5px;	
+}
+
+.vote-detail-content .user-info .detail>div .detail-right ul li.food {
+	position: relative;	
+}
+
+.vote-detail-content .user-info .detail>div .detail-right ul li.food font {
+	position: absolute;	
+}
+
+.vote-detail-content .user-info .detail>div .detail-right ul li.food ul {
+	padding-left: 3em;	
+}
+
+.vote-detail-content .comment {
+	border-top: 1px solid #bfbfbf;
+}
+
+.vote-detail-content .comment>div {
+	position: relative;	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.vote-detail-content .comment>div img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;	
+	position: absolute;
+}
+
+.vote-detail-content .comment>div .comment-right {
+	padding-left: 70px;	
+	color: #000;
+	min-height: 60px;
+}
+
+.vote-detail-content .comment>div .comment-right h4 small {
+	float: right;
+	color: #707070;
+}
+
+.vote-detail-content .comment>div .comment-right p {
+	font-size: 13px;
+	color: #000;	
+}
+
+.vote-detail-content .comment>textarea {
+	background: #eeefef;
+	border: 1px solid #eeefef;
+	width: 96%;
+  padding: 5px;
+}
+
+.vote-detail-content .comment>button {
+	color: #000;
+	width: 100%;	
+}
+.grey font {
+  font-size: 40px;
+  margin-left: 6px;
+}
+.grey{
+	  width: 80px;
+  height: 60px;
+  background: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+  margin-top: 3em;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.empty-service >p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+.empty-service>div, .empty-service>p {
+  text-align: center;
+}
+.vote-detail img{
+	width: 100%;
+}
